@@ -4,7 +4,7 @@ public class PatoIsca extends Pato {
 
 	@Override
 	public String quack() {
-		return null;
+		return Quack.SILENCIO.getSom();
 	}
 
 	@Override

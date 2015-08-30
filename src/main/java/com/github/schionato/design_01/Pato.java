@@ -11,16 +11,15 @@ public abstract class Pato {
 	}
 
 	public void nadar() {
-		if (!nadando)
-			nadando = true;
+		nadando = true;
 	}
 
 	public void pararNadar() {
-		if (nadando)
-			nadando = false;
+		nadando = false;
 	}
 
 	public boolean estaNadando() {
 		return nadando;
 	}
+
 }

@@ -14,4 +14,17 @@ public class TestPatoSelvagem {
 		assertEquals("exibindo um pato muito bravo!!", exibicao);
 	}
 	
+	@Test
+	public void quack() {
+		Pato pato = new PatoSelvagem();
+		String quack = pato.quack();
+		
+		assertEquals(Quack.GRASNAR.getSom(), quack);
+	}
+	
+	@Test
+	public void comoEstaVoando() {
+		PatoCabecaVermelha pato = new PatoCabecaVermelha();
+		assertEquals(Voo.BAIXO, pato.tipoVoo());
+	}
 }

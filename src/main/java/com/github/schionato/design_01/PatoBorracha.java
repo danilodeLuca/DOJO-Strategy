@@ -4,12 +4,11 @@ public class PatoBorracha extends Pato {
 
 	@Override
 	public String quack() {
-		return null;
+		return Quack.GUINCHAR.getSom();
 	}
-	
+
 	@Override
 	public String show() {
 		return "exibindo um pato de borracha";
 	}
-
 }
