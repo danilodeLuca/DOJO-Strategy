@@ -4,6 +4,10 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+import com.github.schionato.design_01.pato.Pato;
+import com.github.schionato.design_01.pato.PatoBorracha;
+import com.github.schionato.design_01.quack.Quack;
+
 public class TestPatoBorracha {
 
 	@Test
@@ -11,7 +15,7 @@ public class TestPatoBorracha {
 		Pato pato = new PatoBorracha();
 		String quack = pato.quack();
 		
-		assertEquals(Quack.GUINCHAR.getSom(), quack);
+		assertEquals(Quack.GUINCHAR.name().toLowerCase(), quack);
 	}
 	
 	@Test

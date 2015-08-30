@@ -4,6 +4,11 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+import com.github.schionato.design_01.pato.Pato;
+import com.github.schionato.design_01.pato.PatoCabecaVermelha;
+import com.github.schionato.design_01.quack.Quack;
+import com.github.schionato.design_01.voo.Voo;
+
 public class TestPatoCabecaVermelha {
 
 	@Test
@@ -19,13 +24,13 @@ public class TestPatoCabecaVermelha {
 		Pato pato = new PatoCabecaVermelha();
 		String quack = pato.quack();
 		
-		assertEquals(Quack.GRASNAR.getSom(), quack);
+		assertEquals(Quack.GRASNAR.name().toLowerCase(), quack);
 	}
 	
 	@Test
 	public void comoEstaVoando() {
 		PatoCabecaVermelha pato = new PatoCabecaVermelha();
-		assertEquals(Voo.BAIXO, pato.tipoVoo());
+		assertEquals(Voo.BAIXO.name().toLowerCase(), pato.voar());
 	}
 	
 }

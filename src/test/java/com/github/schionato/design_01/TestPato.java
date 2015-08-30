@@ -1,18 +1,13 @@
 package com.github.schionato.design_01;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-public class TestPato {
+import com.github.schionato.design_01.pato.Pato;
 
-	@Test
-	public void quack() {
-		Pato pato = new PatoDuble();
-		assertEquals("quack", pato.quack());
-	}
+public class TestPato {
 
 	@Test
 	public void verificaNadar() {
